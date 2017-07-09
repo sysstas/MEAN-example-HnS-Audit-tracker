@@ -1,3 +1,4 @@
-'use strict';
-
-var _angular = require('angular');
+var app = angular.module('meanTest', []);
+app.controller('testCtrl', function($scope){
+	$scope.auditor = ['One', 'Two', 'Three'];
+});
