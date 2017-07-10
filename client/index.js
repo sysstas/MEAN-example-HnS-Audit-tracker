@@ -1,6 +1,14 @@
+"use strict";
 var app = angular.module('meanTest', []);
-app.controller('testCtrl', function($scope){
-	$scope.auditors = [
+app.controller('testCtrl', function($scope, $http){
+	
+	$http.get('/auditors').then((response)=>{
+		$scope.auditors = response.data;
+		
+		console.log(response.status);
+	});
+	
+	/*$scope.auditors = [
 		{
 			name: "Iron Man",
 			audits: [{month: "june", amount: 3}]
@@ -13,8 +21,8 @@ app.controller('testCtrl', function($scope){
 			name: "Spider Men",
 			audits: [{month: "june", amount: 1}]
 		}
-	];
+	];*/
 	
 		
-	$scope.month = ['june', 'july', 'august', 'september'];
+	
 });
