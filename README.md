@@ -10,6 +10,7 @@ Instructions will be here soon.
 
 ```
 git clone https://github.com/sysstas/MEAN-example-HnS-Audit-tracker.git
+npm install
 ```
 
 

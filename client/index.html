@@ -16,7 +16,9 @@
    	<div class="container">
    		<div class="row">
    			<ul ng-repeat = "auditor in auditors">
-   				<li class="col-sm-4"><h1>Auditor {{auditor}}</h1></li>
+   				<li>
+   					<h3>Auditor {{auditor.name}}</h3><p> made {{auditor.audits[0].amount}} audits in {{auditor.audits[0].month}}</p>
+   				</li>
    			</ul>   			
    		</div>
    	</div>
