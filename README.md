@@ -7,13 +7,24 @@ This app will track how many audits every auditor made at some period of time.
 
 Instructions will be here soon.
 
-
+Open terminal a type:
 ```
 git clone https://github.com/sysstas/MEAN-example-HnS-Audit-tracker.git
 npm install
 ```
-
-
+then run Mongo server (should be "mmapv1")
+```
+mongod
+```
+then go to "backupForMongo" in terminal and type:
+```
+mongorestore
+cd ..
+```
+run the app
+```
+node .\server\app.js
+```
 
 ## Built With
 
